@@ -17,7 +17,7 @@ html {
 body {
 
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
 }
 
 section {
@@ -183,7 +183,7 @@ nav div a {
 
 main {
     width: 90vw;
-    height: 85vh;
+    height: 80vh;
     /* background-color: rgb(70, 71, 43); */
     margin: 0 auto;
     margin-top: 3%;
@@ -462,7 +462,7 @@ main p{
 
   .projects div{
     width: 25vw;
-    height:30vh;
+    height:40vh;
     background-color:#4f7942;
     border-radius: 20px;
     margin-top: 5rem;
@@ -471,6 +471,24 @@ main p{
   .project h2{
 text-align: center;
 font-size: 3.5rem;
-margin-top: 1rem;
+margin: 2rem 0;
 font-family: 'Rubik Marker Hatch', cursive;
   }
+
+  .project a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: antiquewhite;
+    
+  }
+  .project a::after{
+    content:" ";
+    
+    display: block;
+  }
+
+  .project p {
+    font-family: 'Rubik Marker Hatch', cursive;
+  }
+ 
+
