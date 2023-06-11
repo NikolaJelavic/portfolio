@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cadetblue: cadetblue;
+  --antiquewhite: antiquewhite;
+  --black: black;
+  --green: #4f7942;
+}
+
 html {
   font-size: 62.5%;
 }
 
 .black {
-  background-color: black;
+  background-color: var(--black);
 }
 
 body {
@@ -32,7 +39,7 @@ section {
 
 .start {
   position: absolute;
-  background-color: #4f7942;
+  background-color: var(--green);
 
   font-family: sans-serif;
   width: 100%;
@@ -64,118 +71,87 @@ section {
 }
 
 .block1 {
-  background-color: black;
   top: 0;
   left: 0;
 }
 
 .block2 {
-  background-color: black;
   top: 50%;
   left: 0;
 }
 
 .block3 {
-  background-color: black;
   top: 0;
   left: 50%;
 }
 
 .block4 {
-  background-color: black;
   top: 50%;
   left: 50%;
 }
 
+.wrapper:hover :is(.block1, .block2, .block3, .block4) {
+  border-radius: 100%;
+}
+
 .wrapper:hover .block1 {
   transform: translateX(-200px) rotate(90deg);
-  border-radius: 50%;
 }
 
 .wrapper:hover .block2 {
   transform: translateX(-200px) rotate(90deg);
-  border-radius: 50%;
 }
 
 .wrapper:hover .block3 {
   transform: translateX(200px) rotate(-90deg);
-  border-radius: 50%;
 }
 
 .wrapper:hover .block4 {
   transform: translateX(200px) rotate(-90deg);
-  border-radius: 50%;
 }
 
-.settings {
+/* .settings {
   position: relative;
-  background-color: #4f7942;
-
+  background-color: var(--green);
   width: 110px;
   height: 110px;
-
   border-radius: 0 0 100% 0;
-
-  /* -webkit-box-shadow: 15px 15px 20px 0px #B8B8B8;  */
   box-shadow: 3px 3px 20px 0px #4f7942;
-  /* visibility: hidden; */
   display: none;
-}
+} */
 /* .settings:hover{
   visibility: visible;
   background-color: #ebebeb;
 } */
-.fa-solid.fa-gear{
+/* .fa-solid.fa-gear {
   margin: 4rem;
-}
-.settings p {
+} */
+/* .settings p {
   transform: rotate(345deg);
   font-family: "Rubik Marker Hatch", cursive;
-}
+} */
 
-
-.cadetblue button{
-  background-color: rgb(2, 2, 2);
-  border: none;
-  width: 11rem;
-  height: 11rem;
-  background-color:cadetblue;
-}
-
-
-
-
-button:hover{
+/* button:hover {
   display: none;
-}
+} */
 
-button:hover + .settings{
-  /* color: antiquewhite; */
-  display:block;
-}
+/* button:hover + .settings {
+  
+  display: block;
+} */
 
-body.black button{
-  background-color:black;
+body.black button {
+  background-color: var(--black);
   border: none;
 }
 
-.fa-solid {
-  color:black;
-  font-size: 2rem;
-}
-.fa-gear{
-  font-size: 3rem;
-  margin: 3rem;
-  color:#4f7942
-}
-
-.fa-moon {
+/* .fa-moon {
   margin: 10% 10% 10% 45%;
 }
 
 .fa-volume-high {
   margin: 10% 10% 10% 20%;
-}
+} */
 
 /* "About me" page*/
 
@@ -183,30 +159,31 @@ nav {
   display: flex;
   justify-content: center;
 
-  background-color: cadetblue;
-  animation: bounce2 3s infinite;
+  /* background-color: var(--cadetblue); */
+  animation: bounce2 7s infinite;
 }
 
 nav div {
-  background-color: #4f7942;
+  background-color: var(--green);
+
   border-radius: 15px;
   text-align: center;
   width: 230px;
   height: 40px;
   font-size: 3rem;
-  box-shadow: 3px 3px 20px 0px #4f7942;
+  box-shadow: 3px 3px 20px 0px var(--green);
 
   margin: 0 5%;
   font-family: "Rubik Marker Hatch", cursive;
 }
 
 nav div a {
-  color: antiquewhite;
+  color: var(--antiquewhite);
   text-decoration: none;
 }
 
 .cadetblue {
-  background-color: cadetblue;
+  background-color: var(--cadetblue);
 }
 
 main {
@@ -236,14 +213,13 @@ main p {
   height: 83%;
 }
 
-
 .aboutMeText {
   width: 50%;
 
-  /* margin: 0 auto; */
-  background-color: #4f7942;
+  /* background-color: var(--green); */
   border-radius: 50px;
   padding-top: 2rem;
+  background: linear-gradient(var(--green), var(--cadetblue));
 }
 .aboutMeText p {
   padding: 1rem 7rem 1rem 7rem;
@@ -261,21 +237,19 @@ main p {
   border-radius: 50%;
 }
 
-.aboutMeText:hover{
-  color:cadetblue;
-  border: 2px solid antiquewhite;
+.aboutMeText:hover {
+  color: cadetblue;
+  border-top: 2px solid var(--antiquewhite);
 }
 
-.languages:hover{
-  color:cadetblue;
-  /* border: 2px solid antiquewhite; */
+.languages:hover {
+  color: cadetblue;
+  border-top: 2px solid var(--antiquewhite);
 }
-.workingExperience:hover{
-  color:cadetblue;
-  border: 2px solid antiquewhite;
+.workingExperience:hover {
+  color: cadetblue;
+  border-top: 2px solid var(--antiquewhite);
 }
-
-
 
 /* .input form{
     display: flex;
@@ -306,7 +280,7 @@ main p {
 /* form animation starts */
 
 .form {
-  background: antiquewhite;
+  background: var(--antiquewhite);
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
   border-radius: 5px;
   max-width: 480px;
@@ -318,14 +292,14 @@ main p {
   left: 0;
   right: 0;
   position: absolute;
-  border-top: 5px solid #4f7942;
+  border-top: 5px solid var(--green);
   /*   z-index: 1; */
-  animation: bounce1 1.5s infinite;
+  animation: bounce1 7s infinite;
   border-radius: 10px;
 }
 
 .form:hover {
-  animation: none;
+  /* animation: none; */
 }
 ::-webkit-input-placeholder {
   font-size: 1.3em;
@@ -358,7 +332,7 @@ main p {
   height: 2.5em;
 }
 .name:hover {
-  border-bottom: 5px solid #4f7942;
+  border-bottom: 5px solid var(--green);
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -371,7 +345,7 @@ main p {
 }
 
 .email:hover {
-  border-bottom: 5px solid #4f7942;
+  border-bottom: 5px solid var(--green);
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -384,7 +358,7 @@ main p {
 }
 
 .message:hover {
-  border-bottom: 5px solid #4f7942;
+  border-bottom: 5px solid var(--green);
   height: 12em;
   width: 380px;
   transition: ease 0.5s;
@@ -396,22 +370,19 @@ main p {
   min-width: 300px;
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid #4f7942;
+  border: 1px solid var(--green);
   transition: all 0.5s ease 0s;
   border-radius: 20px;
 }
 button.submit.formEntry {
-  
   height: 35px;
   color: antiquewhite;
-  background-color: #4f7942;
+  background-color: var(--green);
   font-size: 15px;
   border-radius: 10px;
-  
-
 }
 
-.submit:hover{
+.submit:hover {
   display: block;
 }
 
@@ -428,7 +399,7 @@ button.submit.formEntry {
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0, 18px);
+    transform: translate(0, 20px);
   }
 }
 
@@ -437,13 +408,14 @@ button.submit.formEntry {
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(10px, 0);
+    transform: translate(0px, 20px);
   }
 }
 
 .languages {
   border-radius: 50px;
-  background-color: #4f7942;
+  /* background-color: var(--green); */
+  background: linear-gradient(var(--green), var(--cadetblue));
   width: 20vw;
   display: inline-table;
   padding-bottom: 1rem;
@@ -460,7 +432,8 @@ li {
 }
 
 .workingExperience {
-  background-color: #4f7942;
+  /* background-color: var(--green); */
+  background: linear-gradient(var(--green), var(--cadetblue));
   border-radius: 50px;
   width: 20vw;
   text-align: center;
@@ -522,7 +495,7 @@ li {
 .projects div {
   width: 25vw;
   height: 40vh;
-  background-color: #4f7942;
+  background-color: var(--green);
   border-radius: 20px;
   margin: 5rem;
   text-align: center;
@@ -538,7 +511,7 @@ li {
 .project a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: antiquewhite;
+  color: var(--antiquewhite);
   font-family: "Rubik Marker Hatch", cursive;
 }
 .project a::after {
@@ -552,18 +525,18 @@ li {
   font-size: 1.5vw;
 }
 
-.project:hover{
- 
+.project:hover {
   height: 41vh;
   margin-top: 1rem;
-  color:cadetblue;
-  border: 2px solid antiquewhite;
+  color: cadetblue;
+  border-top: 2px solid var(--antiquewhite);
+  /* border: 2px solid var(--antiquewhite); */
 }
 
 footer {
   width: 100vw;
   height: 10vh;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
 
   position: fixed;
   bottom: 0;
@@ -578,7 +551,7 @@ footer {
 }
 
 .socialNetworks i {
-  color: cadetblue;
+  color: var(--cadetblue);
   margin: 2.5rem;
 }
 
@@ -595,12 +568,12 @@ footer {
   .project {
     width: 90vw;
     margin: 1rem;
-    height:40vh;
+    height: 40vh;
   }
   .project a {
     font-size: 1.8rem;
   }
-  .project p{
+  .project p {
     font-size: 10px;
   }
 
@@ -637,7 +610,6 @@ footer {
   }
 }
 
-
 @media (max-width: 769px) {
   nav a {
     font-size: 2rem;
@@ -648,22 +620,20 @@ footer {
   .projects div {
     width: 90vw;
   }
-  
+
   /* .project a{
     font-size: 1.9rem;
   } */
-  .project p{
+  .project p {
     font-size: 2.3rem;
   }
 }
 
 @media (max-width: 993px) {
-
   .project {
     width: 90vw;
     margin: 1rem;
   }
- 
 
   /* a */
   .project a {
@@ -701,13 +671,33 @@ footer {
   }
   .projects div {
     width: 90%;
-    margin:1rem;
+    margin: 1rem;
   }
   .projects div:nth-child(3) {
     margin-bottom: 13rem;
   }
   .project p {
     font-size: 3rem;
-  } *
+  }
 }
 
+/* Dark mode */
+
+.darkToggle {
+  appearance: none;
+}
+
+.dark {
+  color: white;
+  background: #444;
+}
+
+.fa-solid {
+  color: var(--black);
+  font-size: 3rem;
+}
+
+.cadetblue button {
+  border: none;
+  background-color: var(--cadetblue);
+}
