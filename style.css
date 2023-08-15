@@ -160,7 +160,7 @@ nav {
   justify-content: center;
 
   /* background-color: var(--cadetblue); */
-  animation: bounce2 7s infinite;
+  animation: bounce2 10s infinite;
 }
 
 nav div {
@@ -238,16 +238,16 @@ main p {
 }
 
 .aboutMeText:hover {
-  color: cadetblue;
+  color: var(--antiquewhite);
   border-top: 2px solid var(--antiquewhite);
 }
 
 .languages:hover {
-  color: cadetblue;
+  color: var(--antiquewhite);
   border-top: 2px solid var(--antiquewhite);
 }
 .workingExperience:hover {
-  color: cadetblue;
+  color: var(--antiquewhite);
   border-top: 2px solid var(--antiquewhite);
 }
 
@@ -294,7 +294,7 @@ main p {
   position: absolute;
   border-top: 5px solid var(--green);
   /*   z-index: 1; */
-  animation: bounce1 7s infinite;
+  animation: bounce1 15s infinite;
   border-radius: 10px;
 }
 
@@ -408,7 +408,7 @@ button.submit.formEntry {
     transform: translate(0, 0px);
   }
   50% {
-    transform: translate(0px, 20px);
+    transform: translate(0px, 10px);
   }
 }
 
@@ -456,7 +456,8 @@ li {
   width: 10vw;
   height: 10vh;
   padding: 0 2vw;
-  border-radius: 40%;
+  margin-top:1rem
+  /* border-radius: 40%; */
 }
 .languages p {
   font-family: "Rubik Marker Hatch", cursive;
@@ -527,7 +528,7 @@ li {
 
 .project:hover {
   height: 41vh;
-  margin-top: 1rem;
+  margin-top: 5rem;
   color: cadetblue;
   border-top: 2px solid var(--antiquewhite);
   /* border: 2px solid var(--antiquewhite); */
@@ -535,7 +536,7 @@ li {
 
 footer {
   width: 100vw;
-  height: 10vh;
+  height: 6vh;
   background-color: var(--antiquewhite);
 
   position: fixed;
@@ -552,7 +553,7 @@ footer {
 
 .socialNetworks i {
   color: var(--cadetblue);
-  margin: 2.5rem;
+  margin: 1rem;
 }
 
 .socialNetworks i:hover {
@@ -606,7 +607,7 @@ footer {
   }
 
   footer {
-    height: 9vh;
+    height: 6vh;
   }
 }
 
