@@ -491,14 +491,15 @@ li {
 .projects {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .projects div {
   width: 25vw;
-  height: 40vh;
+  /* height: 40vh; */
   background-color: var(--green);
   border-radius: 20px;
-  margin: 5rem;
+  margin: 1rem;
   text-align: center;
 }
 .project h2 {
@@ -527,8 +528,8 @@ li {
 }
 
 .project:hover {
-  height: 41vh;
-  margin-top: 5rem;
+  /* height: 41vh; */
+  margin-top: 1rem;
   color: cadetblue;
   border-top: 2px solid var(--antiquewhite);
   /* border: 2px solid var(--antiquewhite); */
@@ -564,6 +565,7 @@ footer {
   .projects {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .project {
@@ -669,6 +671,7 @@ footer {
   .projects {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .projects div {
     width: 90%;
