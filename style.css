@@ -504,7 +504,7 @@ li {
 }
 .project h2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin: 2rem 0;
   font-family: "Rubik Marker Hatch", cursive;
   font-weight: 500;
@@ -513,7 +513,10 @@ li {
 .project a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--antiquewhite);
+  color: var(--cadetblue);
+  /* -webkit-text-stroke: 0.5px black; width and color */
+
+    /* font-family: sans; color: yellow; */
   font-family: "Rubik Marker Hatch", cursive;
 }
 .project a::after {
@@ -524,15 +527,21 @@ li {
 
 .project p {
   font-family: "Rubik Marker Hatch", cursive;
-  font-size: 1.5vw;
+  font-size: 2.5rem;
 }
 
 .project:hover {
   /* height: 41vh; */
   margin-top: 1rem;
-  color: cadetblue;
+  
   border-top: 2px solid var(--antiquewhite);
   /* border: 2px solid var(--antiquewhite); */
+}
+.project h2:hover{
+  color: var(--antiquewhite);
+}
+.project p:hover{
+  color: var(--antiquewhite);
 }
 
 footer {
