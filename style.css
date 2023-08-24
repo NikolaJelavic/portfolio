@@ -9,6 +9,7 @@
   --antiquewhite: antiquewhite;
   --black: black;
   --green: #4f7942;
+
 }
 
 html {
@@ -110,36 +111,6 @@ section {
   transform: translateX(200px) rotate(-90deg);
 }
 
-/* .settings {
-  position: relative;
-  background-color: var(--green);
-  width: 110px;
-  height: 110px;
-  border-radius: 0 0 100% 0;
-  box-shadow: 3px 3px 20px 0px #4f7942;
-  display: none;
-} */
-/* .settings:hover{
-  visibility: visible;
-  background-color: #ebebeb;
-} */
-/* .fa-solid.fa-gear {
-  margin: 4rem;
-} */
-/* .settings p {
-  transform: rotate(345deg);
-  font-family: "Rubik Marker Hatch", cursive;
-} */
-
-/* button:hover {
-  display: none;
-} */
-
-/* button:hover + .settings {
-  
-  display: block;
-} */
-
 body.black button {
   background-color: var(--black);
   border: none;
@@ -162,22 +133,27 @@ nav {
   top: 1.5rem;
   left: 0;
   width: 100%;
-  /* background-color: var(--cadetblue); */
   animation: bounce2 10s infinite;
 }
 
 nav div {
-  background-color: var(--green);
-
+  /* background-color: var(--green); */
+  background-color: tomato;
+  
   border-radius: 15px;
   text-align: center;
   width: 230px;
   height: 40px;
   font-size: 3rem;
-  box-shadow: 3px 3px 20px 0px var(--green);
+  box-shadow: 3px 3px 20px 0px black;
   border: 0.1px solid var(--antiquewhite);
   margin: 0 5%;
   font-family: "Rubik Marker Hatch", cursive;
+}
+
+button{
+  background-color: transparent;
+  border:none;
 }
 
 nav div a {
@@ -187,6 +163,9 @@ nav div a {
 
 .cadetblue {
   background-color: var(--cadetblue);
+}
+.antiquewhite {
+  background-color: var(--antiquewhite);
 }
 
 main {
@@ -228,7 +207,9 @@ main p {
   border-radius: 50px;
   padding-top: 2rem;
   /* background: linear-gradient(var(--green), var(--cadetblue)); */
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background-color: wheat;
+  box-shadow: 3px 3px 20px 0px black;
 }
 .aboutMeText p {
   padding: 1rem 7rem 1rem 7rem;
@@ -247,17 +228,17 @@ main p {
 }
 
 .aboutMeText:hover {
-  color: var(--antiquewhite);
-  border-top: 2px solid var(--antiquewhite);
+  color: tomato;
+  border-top: 2px solid tomato;
 }
 
 .languages:hover {
-  color: var(--antiquewhite);
-  border-top: 2px solid var(--antiquewhite);
+  color: tomato;
+  border-top: 2px solid tomato;
 }
 .workingExperience:hover {
-  color: var(--antiquewhite);
-  border-top: 2px solid var(--antiquewhite);
+  color: tomato;
+  border-top: 2px solid tomato;
 }
 
 /* .input form{
@@ -303,7 +284,7 @@ main p {
   left: 0;
   right: 0;
   position: absolute;
-  border-top: 5px solid var(--green);
+  border-top: 5px solid tomato;
   /*   z-index: 1; */
   animation: bounce1 15s infinite;
   border-radius: 10px;
@@ -341,7 +322,7 @@ main p {
   height: 2.5em;
 }
 .name:hover {
-  border-bottom: 5px solid var(--green);
+  border-bottom: 5px solid tomato;
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -354,7 +335,7 @@ main p {
 }
 
 .email:hover {
-  border-bottom: 5px solid var(--green);
+  border-bottom: 5px solid tomato;
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -367,7 +348,7 @@ main p {
 }
 
 .message:hover {
-  border-bottom: 5px solid var(--green);
+  border-bottom: 5px solid tomato;
   height: 12em;
   width: 380px;
   transition: ease 0.5s;
@@ -379,14 +360,14 @@ main p {
   min-width: 300px;
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid var(--green);
+  border: 1px solid tomato;
   transition: all 0.5s ease 0s;
   border-radius: 20px;
 }
 button.submit.formEntry {
   height: 35px;
   color: antiquewhite;
-  background-color: var(--green);
+  background-color: tomato;
   font-size: 15px;
   border-radius: 10px;
 }
@@ -399,7 +380,7 @@ button.submit.formEntry {
   box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
   transform: translateY(-3px);
   width: 300px;
-  border-top: 5px solid #0e3721;
+  border-top: 5px solid tomato;
   border-radius: 10px;
 }
 
@@ -423,7 +404,9 @@ button.submit.formEntry {
 
 .languages {
   border-radius: 50px;
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background-color: wheat;
+  box-shadow: 3px 3px 20px 0px black;
   /* background: linear-gradient(var(--green), var(--cadetblue)); */
   width: 20vw;
   display: inline-table;
@@ -441,7 +424,9 @@ li {
 }
 
 .workingExperience {
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background-color: wheat;
+  box-shadow: 3px 3px 20px 0px black;
   /* background: linear-gradient(var(--green), var(--cadetblue)); */
   border-radius: 50px;
   width: 20vw;
@@ -507,13 +492,30 @@ li {
 }
 
 .projects div {
-  width: 25vw;
+  width: 35vw;
   /* height: 40vh; */
-  background-color: var(--green);
+  /* background-color: var(--green); */
+  background-color: wheat;
+  box-shadow: 3px 3px 20px 0px black;
+
   border-radius: 20px;
   margin: 1rem;
   text-align: center;
 }
+
+div.project button{
+  background-color: tomato;
+  border-radius: 20px;
+  /* padding:5px; */
+  width:90px;
+  margin:5px;
+  border:1px solid black;
+  font-family: "Rubik Marker Hatch", cursive;
+}
+div.project.button:hover{
+  cursor: pointer;
+}
+
 .project h2 {
   text-align: center;
   font-size: 3.5rem;
@@ -525,7 +527,7 @@ li {
 .project a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: var(--cadetblue);
+  color: tomato;
   /* -webkit-text-stroke: 0.5px black; width and color */
 
     /* font-family: sans; color: yellow; */
@@ -546,14 +548,14 @@ li {
   /* height: 41vh; */
   margin-top: 1rem;
   
-  border-top: 2px solid var(--antiquewhite);
+  border-top: 2px solid tomato;
   /* border: 2px solid var(--antiquewhite); */
 }
 .project h2:hover{
   color: var(--antiquewhite);
 }
 .project p:hover{
-  color: var(--antiquewhite);
+  color: tomato;
 }
 
 .contact{
@@ -741,7 +743,7 @@ footer {
   font-size: 3rem;
 }
 
-.cadetblue button {
+/* .cadetblue button {
   border: none;
   background-color: var(--cadetblue);
-}
+} */
