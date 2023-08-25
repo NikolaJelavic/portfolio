@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="./img/favicon.png" />
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    
+    
   </head>
 
   <body class="antiquewhite">
@@ -28,7 +33,7 @@
       </button>
       <div><a href="#aboutMe"> About me </a></div>
       <div><a href="#myProjects"> My Projects </a></div>
-      <div><a href="#contact"> Contact </a></div>
+      <div><a href="#contact-form"> Contact </a></div>
     </nav>
     <main>
       <section class="aboutMe" id="aboutMe">
@@ -138,8 +143,8 @@
           </p>
           <p>HTML, CSS, DOM</p>
           
-          <button >SOON</button>
-          <button >SOON</button>
+          <button onclick="window.open('https://nikolajelavic.github.io/1312', '_blank');">See live</button>
+          <button onclick="window.open('https://github.com/NikolaJelavic/1312', '_blank');">View code</button>
         </div>
 
         <div class="project">
@@ -162,31 +167,23 @@
         </div>
       
       </section>
-
-
       <section class="contact" id="contact">
-        <form class="form">
+        <form id="contact-form" class="form">
           <div class="pageTitle title">Feel free to get in contact via email jelavicnikola@gmail.com or the form below.</div>
-          <!-- <div class="secondaryTitle title">
-            Please fill this form to sign up.
-          </div> -->
-          <input type="text" class="name formEntry" placeholder="Name" />
-          <input type="text" class="email formEntry" placeholder="Email" />
-          <textarea class="message formEntry" placeholder="Message"></textarea>
-          <!-- <input type="checkbox" class="termsConditions" value="Term" />
-          <label style="color: grey" for="terms">
-            I Accept the <span style="color: #0e3721">Terms of Use</span> &
-            <span style="color: #0e3721">Privacy Policy</span>.</label
-          > -->
-          <!-- <br /> -->
-          <button class="submit formEntry">Submit</button>
-        </form>
+          
+          <input type="text" id="from_name" class="name formEntry" placeholder="Full name" required>
+          <input type="email" id="user_email" class="email formEntry" placeholder="Email id" required>
+          <textarea id="message" class="message formEntry" placeholder="Message"></textarea>
+          <button  class="submit formEntry" onclick="SendMail()">Send</button>
+      </form>
+      
       </section>
+      
       
 
 
     </main>
-    <br>
+  
     <footer>
       <div class="socialNetworks">
         <a href="https://www.linkedin.com/in/nikolajelavic/" target="_blank"
@@ -204,5 +201,44 @@
       </div>
     </footer>
     <script src="index.js"></script>
+    <script type="text/javascript">
+      (function() {
+          emailjs.init("jD_xZvBkxFpJS5k70");
+      })();
+  
+      function SendMail() {
+          var fromName = document.getElementById("from_name").value;
+          var userEmail = document.getElementById("user_email").value;
+          var message = document.getElementById("message").value;
+  
+          var params = {
+              from_name: fromName,
+              user_email: userEmail,
+              message: message,
+          };
+  
+          emailjs.send("service_dqjbut5", "template_xk17qlt", params)
+              .then(function(res) {
+                  // Display a customized "Thank you" message
+                  var thankYouMessage = "Thank you " + fromName + " :)\nEmail has been sent!";
+                  alert(thankYouMessage);
+  
+                  // Clear form fields after successful submission
+                  document.getElementById("from_name").value = "";
+                  document.getElementById("user_email").value = "";
+                  document.getElementById("message").value = "";
+              })
+              .catch(function(error) {
+                  // Display an error message
+                  alert("Failed... " + error);
+              });
+      }
+  </script>
+  
+<script type="text/javascript">
+  (function() {
+      emailjs.init("jD_xZvBkxFpJS5k70");
+  })();
+</script>
   </body>
 </html>
