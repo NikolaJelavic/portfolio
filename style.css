@@ -197,7 +197,10 @@ main p {
 }
 
 .profilePic{
-  width: 13vw !important;
+  width: 9vw;
+  float: left;
+  padding: 2%;
+  border-radius: 50%;
 }
 
 .aboutMeText p {
@@ -209,12 +212,12 @@ main p {
   color: tomato;
   text-decoration: none;
 }
-.aboutMeText img {
+/* .aboutMeText img {
   width: 9vw;
   float: left;
   padding: 2%;
   border-radius: 50%;
-}
+} */
 
 .aboutMeText:hover {
   /* color: tomato; */
@@ -543,8 +546,6 @@ button:hover{
     
   }
 
-
-
   .project a {
     font-size: 1.8rem;
   }
@@ -566,7 +567,42 @@ button:hover{
     
   }
   .profilePic{
-    width: 30vw;
+    width: 9vw;
+    float: left;
+    padding: 2%;
+    border-radius: 50%;
+  }
+
+  .cv-download a{
+    text-decoration: none;
+    color: tomato;
+    font-size: 0.7rem;   
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal img {
+    display: block;
+    margin: auto;
+    width: 300px !important;
+    height: 700px !important;
+  }
+  
+
+  button#openModal{
+    color: tomato;
+    font-size: 0.7rem;
   }
 
 
@@ -701,3 +737,50 @@ button:hover{
   font-size: 3rem;
 }
 
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.cv-download{
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 15vw;
+  float: right;
+  padding: 1%;
+  border-radius: 50%;
+}
+
+.cv-download a{
+  text-decoration: none;
+  color: tomato;
+}
+
+button#openModal{
+  color: tomato;
+}
