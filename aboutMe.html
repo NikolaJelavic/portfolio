@@ -36,9 +36,20 @@
       <div><a href="#contact-form"> Contact </a></div>
     </nav>
     <main>
-      <section class="aboutMe" id="aboutMe">
+      <section class="aboutMe" id="aboutMe"> 
         <div class="aboutMeText">
+
           <img src="./img/nikola_jelavic.jpg" alt="Nikola Jelavic photo" class="profilePic" />
+          <div class="cv-download">
+            <button id="openModal">Preview CV</button> <br>
+            <a href="NikolaJelavicQA.jpg" download="NikolaJelavicQA.jpg">Download CV as .jpg</a><br>
+            <a id="downloadLink" href="NikolaJelavicQA.pdf" download="NikolaJelavicQA.pdf">Download CV as .pdf</a>
+          </div>
+    
+          <div id="modal" class="modal">
+            <span class="close" id="closeModal">&times;</span>
+            <img id="cvImage" src="NikolaJelavicQA.jpg" alt="CV Image">
+          </div>
           <h1>Hello! 👋🏽</h1> 
           <p>My name is Nikola and I enjoy creating things that live on the
             internet.
@@ -165,8 +176,11 @@
           <button onclick="window.open('https://github.com/NikolaJelavic/pureHTML', '_blank');">View code</button>
           <!-- <button onclick="window.open('https://github.com/NikolaJelavic/portfolio', '_blank');">View</button> -->
         </div>
-      
       </section>
+
+
+
+
       <section class="contact" id="contact">
         <form id="contact-form" class="form">
           <div class="pageTitle title">Feel free to get in contact via email jelavicnikola@gmail.com or the form below.</div>
@@ -176,6 +190,8 @@
           <textarea id="message" class="message formEntry" placeholder="Message"></textarea>
           <button  class="submit formEntry" onclick="SendMail()">Send</button>
       </form>
+
+     
       
       </section>
       
@@ -200,6 +216,8 @@
         ></a>
       </div>
     </footer>
+
+
     <script src="index.js"></script>
     <script type="text/javascript">
       (function() {
@@ -233,12 +251,12 @@
                   alert("Failed... " + error);
               });
       }
-  </script>
+    </script>
   
-<script type="text/javascript">
+    <script type="text/javascript">
   (function() {
       emailjs.init("jD_xZvBkxFpJS5k70");
   })();
-</script>
+    </script>
   </body>
 </html>
