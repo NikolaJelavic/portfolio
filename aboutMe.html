@@ -38,24 +38,38 @@
     <main>
       <section class="aboutMe" id="aboutMe"> 
         <div class="aboutMeText">
+          <div class="flex">
 
           <img src="./img/nikola_jelavic.jpg" alt="Nikola Jelavic photo" class="profilePic" />
-          <div class="cv-download">
-            <button id="openModal">Preview CV</button> <br>
-            <a href="NikolaJelavicQA.jpg" download="NikolaJelavicQA.jpg">Download CV as .jpg</a><br>
-            <a id="downloadLink" href="NikolaJelavicQA.pdf" download="NikolaJelavicQA.pdf">Download CV as .pdf</a>
-          </div>
+          <div>
+
+            
+            <!-- <div class="cv-download">
+              <button id="openModal">Preview CV</button> <br>
+              <a href="NikolaJelavicQA.jpg" download="NikolaJelavicQA.jpg">Download CV as .jpg</a><br>
+              <a id="downloadLink" href="NikolaJelavicQA.pdf" download="NikolaJelavicQA.pdf">Download CV as .pdf</a>
+            </div> -->
     
           <div id="modal" class="modal">
             <span class="close" id="closeModal">&times;</span>
             <img id="cvImage" src="NikolaJelavicQA.jpg" alt="CV Image">
           </div>
+
+          <div class="dropdown" id="dropdown" onmouseover="dropDown()"  onmouseout="closeDropdown()">
+            <button  class="dropbtn">My CV</button>
+            <div id="myDropdown" class="dropdown-content">
+              <button id="openModal" >Preview CV</button>
+              <a href="NikolaJelavicQA.jpg" download="NikolaJelavicQA.jpg">Download CV as .jpg</a>
+              <a href="NikolaJelavicQA.pdf" download="NikolaJelavicQA.pdf">Download CV as .pdf</a>
+            </div>
+          </div>
+
           <h1>Hello! 👋🏽</h1> 
           <p>My name is Nikola and I enjoy creating things that live on the
             internet.
           </p>
           <p>
-            I'm interested in freelance opportunities and available to work on
+            I'm interested in long-term positions or freelance challenges and available to work on
             your projects and bring your ideas to life. I am just a
             <a href="contact.html">click</a> away.
           </p>
@@ -63,7 +77,8 @@
             However, if you have other request or question, don't hesitate to
             use the <a href="contact.html">form</a>.
           </p>
-          <br><br><br>
+        </div>
+        </div>
           <hr>
           <div class="rest">
           <div class="lang">
@@ -87,7 +102,7 @@
             /></a>
           </div>
           </div>
-          <div class="workingExperience">
+          <!-- <div class="workingExperience">
             <h2>IT Experience in QA</h2>
           
             <a href="https://www.movinga.com"
@@ -98,7 +113,7 @@
               ><img src="./img/flexperto.png" alt="flexperto"
             /></a>
             
-          </div>
+          </div> -->
 
         </div>
         </div>
@@ -114,8 +129,8 @@
           </p>
           <p>React, Next.js, Tailwind</p>
           
-          <button onclick="window.open('https://github.com/NikolaJelavic/monuments', '_blank');">See live</button>
-          <button onclick="window.open('https://yu-monuments.vercel.app/', '_blank');">View code</button>
+          <button onclick="window.open('https://yu-monuments.vercel.app', '_blank');">See live</button>
+          <button onclick="window.open('https://github.com/NikolaJelavic/monuments', '_blank');">View code</button>
           
         </div>
       
