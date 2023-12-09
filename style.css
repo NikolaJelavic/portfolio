@@ -128,7 +128,7 @@ nav div {
    */
    background-color: darkgray;
   
-  border-radius: 15px;
+  border-radius: 10px;
   text-align: center;
   width: 230px;
   height: 40px;
@@ -192,7 +192,7 @@ main p {
   /* margin: 1rem; */
   display:flex;
   /* background-color: var(--green); */
-  border-radius: 50px;
+  border-radius: 10px;
   /* padding-top: 1rem; */
   /* background: linear-gradient(var(--green), var(--cadetblue)); */
   /* background-color: var(--green); */
@@ -456,7 +456,7 @@ button.submit.formEntry {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100vw;
-  height: 175vh;
+  height: 230vh;
 }
 
 .project {
@@ -467,7 +467,7 @@ button.submit.formEntry {
   height:60vh;
   background-color: darkgray;
   box-shadow: 3px 3px 20px 0px black;
-  border-radius: 20px;
+  border-radius: 10px;
   margin: 1rem;
   text-align: center;
   
@@ -906,4 +906,8 @@ button#openModal:hover{
 
 .socialNetworks{
   background-color:var(--antiquewhite);
+}
+
+.projects {
+  margin-top: 5%;
 }
