@@ -7,7 +7,7 @@
 :root {
   --cadetblue: cadetblue;
   --indianred:indianred;
-  --antiquewhite: antiquewhite;
+  --antiquewhite: whitesmoke;
   --black: black;
   --green: #4f7942;
 
@@ -126,7 +126,7 @@ nav div {
   /* background-color: var(--green); */
   /* background-color: tomato;
    */
-   background-color: var(--indianred);
+   background-color: darkgray;
   
   border-radius: 15px;
   text-align: center;
@@ -150,7 +150,7 @@ nav div a {
 }
 
 .antiquewhite {
-  background-color: var(--antiquewhite);
+  background-color: whitesmoke;
 }
 
 main {
@@ -188,6 +188,7 @@ main p {
 
 .aboutMeText {
   width: 80vw;
+  height: 70vh;
   /* margin: 1rem; */
   display:flex;
   /* background-color: var(--green); */
@@ -196,8 +197,9 @@ main p {
   /* background: linear-gradient(var(--green), var(--cadetblue)); */
   /* background-color: var(--green); */
   /* background-color: wheat; */
-  background-color: var(--indianred);
+  background-color: darkgray;
   box-shadow: 3px 3px 20px 0px black;
+
 }
 
 .profilePic{
@@ -261,7 +263,7 @@ h1:hover {
   left: 0;
   right: 0;
   position: absolute;
-  border-top: 5px solid var(--indianred);
+  border-top: 5px solid darkgray;
   /*   z-index: 1; */
   animation: bounce1 15s infinite;
   border-radius: 10px;
@@ -299,7 +301,7 @@ h1:hover {
   height: 2.5em;
 }
 .name:hover {
-  border-bottom: 5px solid var(--indianred);
+  border-bottom: 5px solid darkgray;
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -312,7 +314,7 @@ h1:hover {
 }
 
 .email:hover {
-  border-bottom: 5px solid var(--indianred);
+  border-bottom: 5px solid darkgray;
   height: 30px;
   width: 380px;
   transition: ease 0.5s;
@@ -325,7 +327,7 @@ h1:hover {
 }
 
 .message:hover {
-  border-bottom: 5px solid var(--indianred);
+  border-bottom: 5px solid darkgray;
   height: 12em;
   width: 380px;
   transition: ease 0.5s;
@@ -337,16 +339,17 @@ h1:hover {
   min-width: 300px;
   padding: 10px;
   border-radius: 2px;
-  border: 1px solid var(--indianred);
+  border: 1px solid darkgray;
   transition: all 0.5s ease 0s;
   border-radius: 20px;
 }
 button.submit.formEntry {
   height: 35px;
   color: antiquewhite;
-  background-color: var(--indianred);
+  background-color: darkgray;
   font-size: 15px;
   border-radius: 10px;
+  border:solid 1px black;
 }
 
 .submit:hover {
@@ -357,7 +360,7 @@ button.submit.formEntry {
   box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
   transform: translateY(-3px);
   width: 300px;
-  border-top: 5px solid var(--indianred);
+  border-top: 5px solid darkgrey;
   border-radius: 10px;
 }
 
@@ -453,7 +456,7 @@ button.submit.formEntry {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100vw;
-  height: 140vh;
+  height: 175vh;
 }
 
 .project {
@@ -461,8 +464,8 @@ button.submit.formEntry {
   flex-direction: column;
   justify-content: space-around;
   width: 25vw;
-  height:55vh;
-  background-color: var(--indianred);
+  height:60vh;
+  background-color: darkgray;
   box-shadow: 3px 3px 20px 0px black;
   border-radius: 20px;
   margin: 1rem;
@@ -494,9 +497,13 @@ div.project.button:hover{
 
 .project a {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: tomato;
+  font-size: 2rem;
+  color: darkslategray;
   font-family: "Rubik Marker Hatch", cursive;
+}
+
+.project a:hover{
+  color:black;
 }
 
 .project p {
@@ -535,7 +542,7 @@ footer {
 }
 
 .socialNetworks i {
-  color: var(--indianred);
+  color: darkgray;
   margin: 1rem;
 }
 
@@ -552,11 +559,21 @@ button:hover{
 }
 
 @media (max-width: 481px) {
+.aboutMeText img{
+  width:15vw !important;
+  height: 15vh !important;
+  float:none;
+}
+
   .projects {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    height: 450vh !important;
     
+  }
+  .project{
+    height: 65vh;
   }
 
   .project a {
@@ -588,7 +605,7 @@ button:hover{
 
   .cv-download a{
     text-decoration: none;
-    color: var(--indianred);
+    color: darkgray;
     font-size: 0.7rem;   
   }
 
@@ -618,7 +635,9 @@ button:hover{
     font-size: 0.7rem;
   }
 
-
+.rest {
+  display: block;
+}
 
   .aboutMeText p {
     font-size: 4vw;
@@ -716,14 +735,15 @@ button:hover{
     display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  height:550vh;
   }
   .projects div {
     width: 90%;
     margin: 1rem;
   }
-  .projects div:nth-child(3) {
+  /* .projects div:nth-child(3) {
     margin-bottom: 13rem;
-  }
+  } */
   /* .project p {
     font-size: 3rem;
   } */
@@ -795,7 +815,7 @@ button:hover{
 }
 
 button#openModal{
-  color: var(--indianred);
+  color: darkgray;
   padding: 2px 6px;
   text-decoration: none;
   display: block;
@@ -806,7 +826,7 @@ button#openModal{
   text-align: left;
 }
 button#openModal:hover{
-  background-color: var(--indianred);
+  background-color: darkgray;
   color: black;
 }
 
@@ -817,7 +837,7 @@ button#openModal:hover{
 
 .dropbtn {
   background-color: var(--antiquewhite);
-  color: var(--indianred);
+  color: darkgray;
   padding: 1%;
   font-size: 16px;
   border: none;
@@ -845,7 +865,7 @@ button#openModal:hover{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: antiquewhite;
+  background-color: var(--antiquewhite);
   min-width: 120px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -853,7 +873,7 @@ button#openModal:hover{
 }
 
 .dropdown-content a {
-  color: var(--indianred);
+  color: darkgray;
   padding: 6px 6px;
   /* margin-bottom: 5px; */
   text-decoration: none;
@@ -862,7 +882,7 @@ button#openModal:hover{
   font-family: "Rubik Marker Hatch", cursive;
 }
 
-.dropdown a:hover {background-color: rgb(199, 104, 104); color:black}
+.dropdown a:hover {background-color: darkgray; color:black}
 /* .dropbtn:hover{
   border-top-left-radius:10px ;
   border-top-right-radius:10px;
@@ -878,4 +898,12 @@ button#openModal:hover{
   width: 95%;
   border-radius: 10px ;
   margin: 0px auto;
+}
+
+/* i.fa-brands {
+  color:black;
+} */
+
+.socialNetworks{
+  background-color:var(--antiquewhite);
 }
