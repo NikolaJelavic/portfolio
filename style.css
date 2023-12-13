@@ -123,9 +123,6 @@ nav {
 }
 
 nav div {
-  /* background-color: var(--green); */
-  /* background-color: tomato;
-   */
    background-color: darkgray;
   
   border-radius: 10px;
@@ -175,7 +172,6 @@ main p {
 .aboutMe {
   display: flex;
   justify-content: space-evenly;
-  /* margin:5rem auto; */
   width: 100%;
   height: 100vh;
 }
@@ -189,14 +185,8 @@ main p {
 .aboutMeText {
   width: 80vw;
   height: 70vh;
-  /* margin: 1rem; */
   display:flex;
-  /* background-color: var(--green); */
   border-radius: 10px;
-  /* padding-top: 1rem; */
-  /* background: linear-gradient(var(--green), var(--cadetblue)); */
-  /* background-color: var(--green); */
-  /* background-color: wheat; */
   background-color: darkgray;
   box-shadow: 3px 3px 20px 0px black;
 
@@ -206,8 +196,6 @@ main p {
   width: 19vw;
   float: left;
   margin:3%;
-  /* margin-left: 1%; */
-  /* margin-bottom: 1%; */
   border-radius: 40px;
 }
 
@@ -226,7 +214,6 @@ main p {
 }
 
 .aboutMeText:hover {
-  /* color: tomato; */
   border-top: 2px solid var(--antiquewhite);
 }
 .lang{
@@ -241,21 +228,15 @@ h1:hover {
   color: black;
 }
 
-
-/* hr{
-  border-top: 2px solid tomato;
-} */
-
 #title-Tag-Line {
   font-size: 20px;
 }
 
 .form {
-  background: var(--antiquewhite);
+  background: white;
   box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
   border-radius: 5px;
   max-width: 480px;
-  /* height: 45vh; */
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
@@ -264,7 +245,6 @@ h1:hover {
   right: 0;
   position: absolute;
   border-top: 5px solid darkgray;
-  /*   z-index: 1; */
   animation: bounce1 15s infinite;
   border-radius: 10px;
 }
@@ -286,7 +266,6 @@ h1:hover {
 
 .pageTitle {
   font-size: 2.0em;
-  /* font-weight: bold; */
   text-align: center;
   width:100%;
 }
@@ -390,12 +369,7 @@ button.submit.formEntry {
   font-size: 2vw;
 }
 
-/* li {
-  font-size: 1.5rem;
-} */
 .technologies{
-  /* border-style: none  solid none solid; */
-  /* border-color: tomato; */
   width: 30vw;
   display: flex;
   justify-content: space-around;
@@ -422,8 +396,6 @@ button.submit.formEntry {
   width: 10vw;
   height: 8vh;
   border-radius: 0px;
-  /* padding: 0 2vw; */
-  /* margin-top:1rem */
 
 }
 .lang p {
@@ -530,8 +502,6 @@ div.project.button:hover{
 footer {
   width: 100vw;
   height: 6vh;
-  /* background-color: var(--antiquewhite); */
-
   position: fixed;
   bottom: 0;
 }
@@ -696,38 +666,7 @@ button:hover{
 
 @media (max-width: 993px) {
 
-  /* .project {
-    width: 90vw;
-    margin: 1rem;
-  }
 
- 
-  .project a {
-    font-size: 1.5rem;
-  }
-
-  .aboutMe {
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutMe div {
-    width: 90vw;
-    margin-top: 1rem;
-  }
-  .aboutMe div:nth-child(3) {
-    margin-bottom: 10rem;
-  }
-
-  .aboutMeText p {
-    font-size: 2rem;
-  }
-
-  .aboutMe img {
-    width: 30%;
-  }
-  .languages img {
-    margin-left: 12%;
-  } */
 }
 
 @media (max-width: 1201px) {
@@ -741,12 +680,7 @@ button:hover{
     width: 90%;
     margin: 1rem;
   }
-  /* .projects div:nth-child(3) {
-    margin-bottom: 13rem;
-  } */
-  /* .project p {
-    font-size: 3rem;
-  } */
+
 }
 
 /* Dark mode */
@@ -830,9 +764,6 @@ button#openModal:hover{
   color: black;
 }
 
-
-
-
 /* dropdown */
 
 .dropbtn {
@@ -843,7 +774,7 @@ button#openModal:hover{
   border: none;
   cursor: pointer;
   font-family: "Rubik Marker Hatch", cursive;
-  /* border-radius: 20px; */
+
   width:6vw;
   height: 20%;
 }
@@ -853,9 +784,7 @@ button#openModal:hover{
 }
 
 .dropdown {
-  /* margin-left:5%; */
   position: relative;
-  /* display: inline-block; */
   float: right;
   margin-top:5%;
   margin-right: 5%;
@@ -875,7 +804,6 @@ button#openModal:hover{
 .dropdown-content a {
   color: darkgray;
   padding: 6px 6px;
-  /* margin-bottom: 5px; */
   text-decoration: none;
   display: block;
   font-weight: 300;
@@ -899,10 +827,6 @@ button#openModal:hover{
   border-radius: 10px ;
   margin: 0px auto;
 }
-
-/* i.fa-brands {
-  color:black;
-} */
 
 .socialNetworks{
   background-color:var(--antiquewhite);
