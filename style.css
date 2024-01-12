@@ -126,11 +126,11 @@ section {
 
 /* Apply the animation after 5 seconds */
 .block1, .block2 {
-  animation: moveLeftAnimation 2s ease 5s forwards;
+  animation: moveLeftAnimation 4s ease 10s forwards;
 }
 
 .block3, .block4 {
-  animation: moveRightAnimation 2s ease 5s forwards;
+  animation: moveRightAnimation 4s ease 10s forwards;
 }
 
 body.black button {
@@ -861,3 +861,31 @@ button#openModal:hover{
 .projects {
   margin-top: 5%;
 }
+
+
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  font-size: 25px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 10px;
+  transition: opacity 0.3s;
+}
+
+#backToTopBtn:hover {
+  background-color: darkgray;
+}
+
+/* Show the button when the user scrolls down 20px from the top of the document */
+@media screen and (min-width: 768px) {
+  #backToTopBtn {
+    display: none;
+  }
+}
+
