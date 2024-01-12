@@ -107,6 +107,32 @@ section {
   transform: translateX(200px) rotate(-90deg);
 }
 
+
+/* Keyframes for the opening animation */
+@keyframes moveLeftAnimation {
+  to {
+    border-radius: 100%;
+    transform: translateX(-200px) rotate(90deg);
+  }
+}
+
+/* Keyframes for block3 and block4 */
+@keyframes moveRightAnimation {
+  to {
+    border-radius: 100%;
+    transform: translateX(200px) rotate(-90deg);
+  }
+}
+
+/* Apply the animation after 5 seconds */
+.block1, .block2 {
+  animation: moveLeftAnimation 2s ease 5s forwards;
+}
+
+.block3, .block4 {
+  animation: moveRightAnimation 2s ease 5s forwards;
+}
+
 body.black button {
   background-color: var(--black);
   border: none;
