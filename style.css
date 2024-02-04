@@ -555,10 +555,21 @@ button:hover{
 }
 
 @media (max-width: 481px) {
+
+ .aboutMeText{
+  width: 90vw;
+ } 
 .aboutMeText img{
-  width:15vw !important;
-  height: 15vh !important;
+  width:7vw ;
+  height: 7vh;
   float:none;
+}
+div.mobile{
+  width: 100vw !important;
+}
+
+.dropdown-content{
+  margin-top:0 !important;
 }
 
   .projects {
@@ -587,15 +598,14 @@ button:hover{
     /* width: 90vw; */
     margin-top: 1rem;
   }
-  .aboutMeText img{
-    width: 35vw;
-    justify-content: center;
-    
-  }
-  .profilePic{
-    width: 25vw;
-    float: left;
-    padding: 2%;
+  
+
+  
+  img.profilePic{
+    width: 25vw ;
+    height: 20%;
+    float: left !important;
+    /* padding: 2%; */
     border-radius: 50%;
   }
 
@@ -632,11 +642,11 @@ button:hover{
   }
 
 .rest {
-  display: block;
+  display: flex;
 }
 
   .aboutMeText p {
-    font-size: 4vw;
+    font-size: 1.4em;
   }
 
   .languages img {
@@ -645,7 +655,8 @@ button:hover{
 
   .technologiesImages{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   nav div a {
