@@ -209,10 +209,10 @@ main p {
 }
 
 .aboutMeText {
-  width: 80vw;
-  height: 70vh;
+  /* width: 80vw; */
+  height: 80vh;
   display:flex;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   background-color: darkgray;
   box-shadow: 3px 3px 20px 0px black;
 
@@ -239,9 +239,9 @@ main p {
   color: darkslategray;
 }
 
-.aboutMeText:hover {
+/* .aboutMeText:hover {
   border-top: 2px solid var(--antiquewhite);
-}
+} */
 .lang{
   width:25vw;
 }
@@ -554,172 +554,6 @@ button:hover{
   display: flex;
 }
 
-@media (max-width: 481px) {
-
- .aboutMeText{
-  width: 90vw;
- } 
-.aboutMeText img{
-  width:7vw ;
-  height: 7vh;
-  float:none;
-}
-div.mobile{
-  width: 100vw !important;
-}
-
-.dropdown-content{
-  margin-top:0 !important;
-}
-
-  .projects {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    height: 450vh !important;
-    
-  }
-  .project{
-    height: 65vh;
-  }
-
-  .project a {
-    font-size: 1.8rem;
-  }
-  .project p {
-    font-size: 3rem;
-  }
-
-  .aboutMe {
-    display: flex;
-    flex-direction: column;
-  }
-  .aboutMe div {
-    /* width: 90vw; */
-    margin-top: 1rem;
-  }
-  
-
-  
-  img.profilePic{
-    width: 25vw ;
-    height: 20%;
-    float: left !important;
-    /* padding: 2%; */
-    border-radius: 50%;
-  }
-
-  .cv-download a{
-    text-decoration: none;
-    color: darkgray;
-    font-size: 0.7rem;   
-  }
-
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-  
-  .modal img {
-    display: block;
-    margin: auto;
-    width: 300px !important;
-    height: 700px !important;
-  }
-  
-
-  button#openModal{
-    color: tomato;
-    font-size: 0.7rem;
-  }
-
-.rest {
-  display: flex;
-}
-
-  .aboutMeText p {
-    font-size: 1.4em;
-  }
-
-  .languages img {
-    margin-left: 12%;
-  }
-
-  .technologiesImages{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  nav div a {
-    font-size: 1.5rem;
-  }
-
-  section#contact.contact{
-    position:relative;
-  }
-
-  footer {
-    height: 6vh;
-  }
-}
-
-@media (max-width: 769px) {
-  nav a {
-    font-size: 2rem;
-  }
-  nav div {
-    margin: 0 2%;
-  }
- button#darkToggle.darkToggle{
-  top: 50px;
-  left: 10px;
-  position: absolute;
- }
-  .projects {
-    display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  }
-  .projects div {
-    width: 90vw;
-  }
-
-  /* .project a{
-    font-size: 1.9rem;
-  } */
-  .project p {
-    font-size: 2.3rem;
-  }
-}
-
-@media (max-width: 993px) {
-
-
-}
-
-@media (max-width: 1201px) {
-  .projects {
-    display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  height:550vh;
-  }
-  .projects div {
-    width: 90%;
-    margin: 1rem;
-  }
-
-}
-
 /* Dark mode */
 
 .darkToggle {
@@ -811,7 +645,7 @@ button#openModal:hover{
   border: none;
   cursor: pointer;
   font-family: "Rubik Marker Hatch", cursive;
-
+  
   width:6vw;
   height: 20%;
 }
@@ -900,5 +734,192 @@ button#openModal:hover{
   #backToTopBtn {
     display: none;
   }
+}
+
+@media (max-width: 481px) {
+
+.dropbtn{
+font-size: 12px;
+width:10vw;
+}
+.aboutMeText {
+  min-height: 85vh; /
+}
+.aboutMeText img{
+  width:18vw ;
+  height: 8vh;
+  float:none;
+}
+/* div.mobile{
+  width: 100vw !important;
+} */
+
+.dropdown-content{
+  margin-top:0 !important;
+}
+
+  .projects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 450vh !important;
+    
+  }
+  .project{
+    height: 65vh;
+  }
+
+  .project a {
+    font-size: 1.8rem;
+  }
+  .project p {
+    font-size: 3rem;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutMe div {
+    /* width: 90vw; */
+    margin-top: 1rem;
+  }
+  
+
+  
+  img.profilePic{
+    width: 30vw ;
+    height: 25%;
+    float: left !important;
+    /* padding: 2%; */
+    border-radius: 50%;
+  }
+
+  .cv-download a{
+    text-decoration: none;
+    color: darkgray;
+    font-size: 0.7rem;   
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal img {
+    display: block;
+    margin: auto;
+    width: 300px !important;
+    height: 700px !important;
+  }
+  
+
+  button#openModal{
+    color: tomato;
+    font-size: 0.7rem;
+  }
+
+.rest {
+  display: flex;
+}
+.lang {
+  width:50%;
+}
+.lang h2 {
+font-size: 2.3em;
+}
+.technologies{
+  width:50%
+}
+.technologies h2{
+  font-size: 2.3em;
+}
+
+.aboutMeText h1 {
+  font-size: 3.3em;
+}
+  .aboutMeText p {
+    font-size: 1.8em;
+  }
+
+  .languages img {
+    margin-left: 12%;
+  }
+
+  .technologiesImages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  nav div a {
+    font-size: 1.5rem;
+  }
+
+  section#contact.contact{
+    position:relative;
+  }
+
+  footer {
+    height: 6vh;
+  }
+}
+
+@media (max-width: 769px) {
+  nav a {
+    font-size: 2rem;
+  }
+  nav div {
+    margin: 0 2%;
+  }
+ button#darkToggle.darkToggle{
+  top: 50px;
+  left: 10px;
+  position: absolute;
+ }
+  .projects {
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+  .projects div {
+    width: 90vw;
+  }
+
+  /* .project a{
+    font-size: 1.9rem;
+  } */
+  .project p {
+    font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 993px) {
+
+
+}
+
+@media (max-width: 1201px) {
+  .projects {
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height:550vh;
+  }
+  .projects div {
+    width: 90%;
+    margin: 1rem;
+  }
+
 }
 
