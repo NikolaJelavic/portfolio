@@ -629,6 +629,8 @@ button#openModal{
   padding: 7px;
   width: 120px;
   text-align: left;
+  z-index:0;
+
 }
 button#openModal:hover{
   background-color: darkgray;
@@ -759,6 +761,7 @@ width:10vw;
 
 .dropdown-content{
   margin-top:0 !important;
+  z-index: 0;
 }
 
 .projects {
