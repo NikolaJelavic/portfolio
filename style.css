@@ -827,11 +827,15 @@ img.profilePic{
   width:90vw !important;
   max-width:90%;
 } */
-
+.close{
+  color:red;
+  top: 10px;
+  right:15px;
+}
 
   button#openModal{
     color: tomato;
-    font-size: 0.7rem;
+    font-size: 1rem;
   }
 
 .rest {
