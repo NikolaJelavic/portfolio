@@ -660,7 +660,7 @@ button#openModal:hover{
   position: relative;
   float: right;
   margin-top:5%;
-  margin-right: 5%;
+  /* margin-right: 5%; */
   
 }
 
@@ -773,6 +773,7 @@ width:10vw;
 }
 .project{
   height: 65vh;
+  margin-top:20px !important;
 }
 
 .project a {
