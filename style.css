@@ -755,7 +755,11 @@ width:10vw;
 }
 
 .aboutMeText {
-  min-height: 85vh; /
+
+  /* height: 625px;  */
+  height: auto; 
+  /* THIS! */
+
 }
 .aboutMeText img{
   width:18vw ;
@@ -775,7 +779,9 @@ width:10vw;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  height: 450vh !important;
+  /* height: 450vh !important; */
+  height: auto; 
+
   
 }
 .project{
@@ -793,6 +799,7 @@ width:10vw;
 .aboutMe {
   display: flex;
   flex-direction: column;
+  min-height: 400px;
 }
 .aboutMe div {
   /* width: 90vw; */
